@@ -28,7 +28,7 @@ var questions = [{
 },
 
 {
-    question: "inside which HTML element do you put Javascript?",
+    question: "in what HTML element do you put Javascript?",
     
     "option1": "snow",
     "option2": "script",

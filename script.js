@@ -13,6 +13,8 @@ var opt4 = document.getElementById('opt4');
 var nextButton = document.getElementById('nextButton');
 var resultCont = document.getElementById('result');
 
+
+
 //method to load questions from question index
 function loadQuestion (questionIndex) {
     var q = questions[questionIndex];
@@ -49,8 +51,17 @@ function loadNextQuestion () {
     }
     loadQuestion(currentQuestion);
 }
-//trying to jump start quiz but couldn't get questions to load....'questions' showing as undefined
-loadQuestion(currentQuestion);
+
+
+//Start button to call 1st question
+document.getElementById("startButton").addEventListener("click", function(){
+
+        loadQuestion(currentQuestion);
+    
+})
+
+
+
 
 
 
