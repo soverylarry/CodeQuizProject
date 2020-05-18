@@ -50,7 +50,7 @@ function loadNextQuestion () {
     loadQuestion(currentQuestion);
 }
 //trying to jump start quiz but couldn't get questions to load....'questions' showing as undefined
-loadQuestion(currentQuestion)
+loadQuestion(currentQuestion);
 
 
 

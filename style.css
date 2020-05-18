@@ -3,7 +3,7 @@ body {
 }
 
 .container{
-    height: 350px;
+    height: 400px;
     width: 1200px;
     position: absolute;
     top: 50%;
@@ -73,7 +73,7 @@ body {
 
 
 .result{
-    height: 100px;
+    height: 200px;
     text-align: center;
     font-size: 75px;
 }

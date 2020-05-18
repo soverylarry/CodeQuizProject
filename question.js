@@ -1,5 +1,5 @@
 var questions = [{
-    "question": "what is Javasript", 
+    "question": "what is Javascript", 
     "option1": "scripting language",
     "option2": "boolean value",
     "option3": "ancient scroll",
