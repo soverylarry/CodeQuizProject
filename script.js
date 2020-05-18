@@ -1,8 +1,8 @@
 //declaring key variables
-var currentQuestion = 0
-//var timeLeft = 120 (to be used when I figure out the damn timer...)
+var currentQuestion = 0 
 var score = 0;
 var totQuestions = questions.length;
+
 
 var container = document.getElementById('quizContainer');
 var questionEl = document.getElementById('question');
@@ -15,6 +15,11 @@ var resultCont = document.getElementById('result');
 
 
 
+    //Start button to call 1st question
+    document.getElementById("startButton").addEventListener("click", function(){
+        loadQuestion(currentQuestion);
+    })
+    
     //method to load questions from question index
     function loadQuestion (questionIndex) {
     var q = questions[questionIndex];
@@ -52,20 +57,6 @@ var resultCont = document.getElementById('result');
     loadQuestion(currentQuestion);
     }
 
-
-    //Start button to call 1st question
-    document.getElementById("startButton").addEventListener("click", function(){
-
-        loadQuestion(currentQuestion);
-        
-    })
-
-
-
-
-
-
-//save Initials and Score to local storage
 
 
         
