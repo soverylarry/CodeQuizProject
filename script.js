@@ -15,8 +15,8 @@ var resultCont = document.getElementById('result');
 
 
 
-//method to load questions from question index
-function loadQuestion (questionIndex) {
+    //method to load questions from question index
+    function loadQuestion (questionIndex) {
     var q = questions[questionIndex];
     questionEl.textContent = (questionIndex + 1) + '. ' + q.question;
     opt1.textContent = q.option1;
@@ -24,8 +24,8 @@ function loadQuestion (questionIndex) {
     opt3.textContent = q.option3;
     opt4.textContent = q.option4;
 };
-//loads next question after checking to see an answer has been selected
-function loadNextQuestion () {
+    //loads next question after checking to see an answer has been selected
+    function loadNextQuestion () {
     var selectedOption = document.querySelector('input[type=radio]:checked');
     if(!selectedOption){
         alert('please make a choice!');
@@ -53,12 +53,12 @@ function loadNextQuestion () {
 }
 
 
-//Start button to call 1st question
-document.getElementById("startButton").addEventListener("click", function(){
+    //Start button to call 1st question
+    document.getElementById("startButton").addEventListener("click", function(){
 
         loadQuestion(currentQuestion);
-    
-})
+        
+    })
 
 
 
