@@ -23,7 +23,7 @@ var resultCont = document.getElementById('result');
     opt2.textContent = q.option2;
     opt3.textContent = q.option3;
     opt4.textContent = q.option4;
-};
+    };
     //loads next question after checking to see an answer has been selected
     function loadNextQuestion () {
     var selectedOption = document.querySelector('input[type=radio]:checked');
@@ -50,7 +50,7 @@ var resultCont = document.getElementById('result');
         return;
     }
     loadQuestion(currentQuestion);
-}
+    }
 
 
     //Start button to call 1st question
