@@ -25,7 +25,7 @@ body {
 .question{
     padding: 20px;
     font-size: 22px;
-    background: lightseagreen;
+    background: rgb(198, 212, 212);
     border-radius: 1em;
     margin: 10px 0 10px 0;
     color: maroon;
@@ -44,7 +44,7 @@ body {
 
 .option:hover{
     background: navajowhite;
-    color: palegoldenrod;
+    color: rgb(102, 101, 170);
 }
 
 .next-btn{
