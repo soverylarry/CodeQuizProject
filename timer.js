@@ -1,9 +1,9 @@
 
-window.onload = function () {
-    var fiveMinutes = 60 * 5,
+document.getElementById("startButton").addEventListener("click", function(){
+    var fiveMinutes = 60 * 1,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
-};
+})
 
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
@@ -16,8 +16,9 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds;
 
-        if (--timer < 0) {
-            timer = duration;
+        if (--timer < 1) {
+         alert("time's up");
+         return
         }
     }, 1000);
 }

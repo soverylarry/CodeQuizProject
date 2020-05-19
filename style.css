@@ -82,3 +82,15 @@ body {
     background: greenyellow;
     color: hotpink;
 }
+
+#clock{ 
+    flex: inherit;
+    float: middle;
+    border: none;
+    outline: none;
+    background-color: hotpink;
+    width: 13em;
+    height: 2em;
+    border-radius: .5em;
+
+}
