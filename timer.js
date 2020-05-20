@@ -1,8 +1,8 @@
 
 document.getElementById("startButton").addEventListener("click", function(){
-    var fiveMinutes = 60 * .1,
+    var twoMinutes = 60 * 2,
         display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
+    startTimer(twoMinutes, display);
 })
 
 function startTimer(duration, display) {

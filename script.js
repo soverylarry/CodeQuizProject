@@ -29,6 +29,7 @@ var resultCont = document.getElementById('result');
     opt3.textContent = q.option3;
     opt4.textContent = q.option4;
     };
+
     //loads next question after checking to see an answer has been selected
     function loadNextQuestion () {
     var selectedOption = document.querySelector('input[type=radio]:checked');
@@ -40,13 +41,16 @@ var resultCont = document.getElementById('result');
     var answer = selectedOption.value;
     if(questions[currentQuestion].answer == answer){
         score += 10;
+       //}   else { seconds -=5
     }
+
     //if last question shows that you're done
     selectedOption.checked = false;
     currentQuestion++;
     if(currentQuestion == totQuestions - 1){
         nextButton.textContent = 'Finish';
     }
+
     //at end of quiz the container will disappear and shows results container with score
     if(currentQuestion == totQuestions){
         container.style.display = 'none';
